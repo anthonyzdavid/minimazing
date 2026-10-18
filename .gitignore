@@ -1,0 +1,19 @@
+# secrets — never commit
+envtest
+*.password
+
+# private phone backups (huge, personal data)
+backups/
+
+# third-party commercial app kept only for local reference
+reference/
+
+# local environment / caches
+.venv/
+__pycache__/
+.pytest_cache/
+.coverage
+htmlcov/
+.DS_Store
+minimazing-out/
+synthetic/

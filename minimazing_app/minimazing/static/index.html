@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>minimazing</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="gate" hidden>
+    <div id="gate-card"></div>
+  </div>
+
+  <div id="app" hidden>
+    <aside id="sidebar">
+      <div id="device-card">
+        <div id="device-icon"></div>
+        <div id="device-text">
+          <div id="device-name">Loading…</div>
+          <div id="device-sub"></div>
+        </div>
+      </div>
+
+      <div id="storage-bar" title=""></div>
+      <div id="storage-legend"><span class="muted">Measuring storage…</span></div>
+
+      <nav id="nav"></nav>
+
+      <div id="sidebar-footer">
+        <button id="switch-backup" class="link-btn">Switch backup…</button>
+        <div><span class="dot dot-ok"></span> Runs locally. Nothing leaves this machine.</div>
+      </div>
+    </aside>
+
+    <main id="main">
+      <header id="topbar">
+        <h1 id="view-title">Overview</h1>
+        <div id="topbar-actions">
+          <div id="view-tools"></div>
+          <input id="search" type="search" placeholder="Search" hidden>
+          <div class="btn-group" id="export-group" hidden></div>
+        </div>
+      </header>
+      <div id="content"></div>
+    </main>
+  </div>
+
+  <div id="lightbox" class="hidden">
+    <button id="lightbox-close" aria-label="Close">&times;</button>
+    <button id="lightbox-prev" class="lb-nav" aria-label="Previous">&#8249;</button>
+    <button id="lightbox-next" class="lb-nav" aria-label="Next">&#8250;</button>
+    <div id="lightbox-body"></div>
+  </div>
+
+  <script src="icons.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

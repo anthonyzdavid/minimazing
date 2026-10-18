@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.coverage
+htmlcov/
+.DS_Store
+minimazing-out/
+synthetic/
+# never commit backups or passwords
+envtest
+*.password
